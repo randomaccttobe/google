@@ -5,7 +5,7 @@
       $copyButton = $('#copylinkbtn'),
       clipboard;
 
-    $shareLink.on('keyup paste', function() {
+    $shareLink.on('input', function() {
       var link = $shareLink.val(),
         l = link.replace(/\/file\/d\/(.+)\/(.+)/, "/uc?export=download&id=$1");
       if(l !== link) {
